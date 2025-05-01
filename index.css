@@ -56,3 +56,57 @@ nav ul li a {
 nav ul li a:hover {
     color: #2F4F4F;
 }
+
+/* Hero Section */
+.hero {
+    background-image: url('C:/Users/ckalr/Downloads/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    color: black;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-gif {
+    width: 400px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.hero p {
+    font-family: "Garamond", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Content Section */
+.content {
+    background-color: #E0FFFF;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
