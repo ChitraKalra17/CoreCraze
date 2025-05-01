@@ -109,4 +109,57 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+/* Goal Section */
+.goal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #F0FFFF;
+}
+
+.goal-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.goal-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.goal-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.get-started-btn {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: black;
+}
+
+.goal-image {
+    max-width: 45%;
+}
+
+.goal-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
