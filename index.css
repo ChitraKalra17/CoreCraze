@@ -163,3 +163,56 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2F4F4F;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goal-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .goal-content, .goal-image {
+        max-width: 100%;
+    }
+
+    .goal-image img {
+        margin-top: 20px;
+    }
+}
+
+/* Initial state for elements (hidden and slightly moved down) */
+.rise-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When the element is visible on scroll */
+.rise-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0); /* Return to its normal position */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
