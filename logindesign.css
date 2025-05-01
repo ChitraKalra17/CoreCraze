@@ -1,0 +1,142 @@
+/* General Styling */ 
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #2ecc71, #3498db);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 28px;
+    color: black;
+    font-family: "Didot", serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2F4F4F;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(90deg, #2ecc71, #3498db);
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-btn {
+    background-color: #2F4F4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-btn:hover {
+    background-color: #3498db;
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2F4F4F;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
