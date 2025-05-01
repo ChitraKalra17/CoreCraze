@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CoreCraze</title>
+    <link rel="stylesheet" href="signupdesign.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="C:\Users\ckalr\Downloads\Screenshot_2024-11-27_201848-removebg-preview.png" alt="CoreCraze Logo">
+            <span class="logo-text">CoreCraze</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="bmibmr.html">BMI/BMR</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+		<li><a href="#footer">Contact Us</a></li>
+                <li><a id="auth-link" href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupEmail">Email ID</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+                
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+                <button type="submit" class="form-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>© 2024 CoreCraze. All Rights Reserved.</p>
+        <p>Contact Us: 
+            <a href="mailto:info@corecraze.com">info@corecraze.com</a> | 
+            Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </p>
+        <p>Follow us: 
+            <a href="https://www.instagram.com/">Instagram</a> | 
+            <a href="https://www.facebook.com/?_rdr">Facebook</a> | 
+            <a href="https://x.com/i/flow/login?lang=en">Twitter</a>
+        </p>
+    </footer>
+
+    <script src="signupscript.js"></script>
+</body>
+</html>
