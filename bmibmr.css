@@ -107,7 +107,7 @@ nav ul li a:hover {
 .calculator-form button {
     width: 100%;
     padding: 12px;
-    margin: 12px 0;
+    margin: 14px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
@@ -152,4 +152,17 @@ footer a:hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+
+.rise-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.rise-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
 }
