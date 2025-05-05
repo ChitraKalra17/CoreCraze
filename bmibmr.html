@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreCraze: Fuel Your Fitness</title>
+    <link rel="stylesheet" href="./css/bmibmr.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="C:\Users\ckalr\Downloads\Screenshot_2024-11-27_201848-removebg-preview.png" alt="CoreCraze Logo">
+            <span class="logo-text">CoreCraze</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bmibmr.html" class="active">BMI/BMR</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- BMI/BMR Calculator Section -->
+  <div class="bmi-container">
+    <h1>BMI/BMR Calculator</h1>
+    <div class="tabs">
+        <button class="tab-btn active" id="bmi-btn" onclick="showCalculator('bmi')">BMI</button>
+        <button class="tab-btn" id="bmr-btn" onclick="showCalculator('bmr')">BMR</button>
+    </div>
+      <!-- BMI Calculator -->
+      <div id="bmi-form" class="calculator-form">
+        <h2>BMI Calculator</h2>
+        <p>Enter your height (in meters) and weight (in kg):</p>
+        <input type="number" id="bmi-height" placeholder="Height (in meters)" step="0.01">
+        <input type="number" id="bmi-weight" placeholder="Weight (in kg)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div class="result" id="bmi-result"></div>
+      </div>
+       <!-- BMR Calculator -->
+       <div id="bmr-form" class="calculator-form" style="display: none;">
+        <h2>BMR Calculator</h2>
+        <p>Enter your age, weight (kg), height (cm), and gender:</p>
+        <input type="number" id="bmr-age" placeholder="Age">
+        <input type="number" id="bmr-weight" placeholder="Weight (kg)">
+        <input type="number" id="bmr-height" placeholder="Height (cm)">
+        <select id="bmr-gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <select id="activity-level">
+            <option value="sedentary">Sedentary</option>
+            <option value="light">Lightly active</option>
+            <option value="moderate">Moderately active</option>
+            <option value="active">Very active</option>
+        </select>
+        <button onclick="calculateBMR()">Calculate BMR</button>
+        <div class="result" id="bmr-result"></div>
+    </div>
+</div>
+   <!-- Footer Section -->
+   <footer id="footer">
+    <p>© 2024 CoreCraze. All Rights Reserved.</p>
+    <p>Contact Us: 
+        <a href="mailto:info@corecraze.com">info@corecraze.com</a> | 
+        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+    </p>
+    <p>Follow us: 
+        <a href="https://www.instagram.com/">Instagram</a> | 
+        <a href="https://www.facebook.com/?_rdr">Facebook</a> | 
+        <a href="https://x.com/i/flow/login?lang=en">Twitter</a>
+    </p>
+</footer>
+    <script src="./js/bmibmrscript.js"></script>
+</body>
+</html>
