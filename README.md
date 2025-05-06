@@ -1,2 +1,0 @@
-# CoreCraze
-Fitness Tracking Website
